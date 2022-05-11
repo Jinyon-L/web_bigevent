@@ -52,7 +52,7 @@ $(function () {
             data: $('#form_login').serialize(),
             success: function (res) {
                 if (res.status !== 0) {
-                    return layer.msg('登录失败!')
+                    return layer.msg('用户名或密码错误!')
 
                 }
                 layer.msg('登陆成功!')
